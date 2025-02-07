@@ -7,7 +7,7 @@ Welcome to the Java Programs Repository! This collection is designed to help lea
 - [Introduction](#introduction)
 - [Directory Structure](#directory-structure)
 - [Getting Started](#getting-started)
-- [Contributing](#contributing)
+
 
 ## Introduction
 
@@ -52,9 +52,6 @@ To get started with this repository:
 
 Ensure you have the Java Development Kit (JDK) installed on your system. You can download it from the [official Oracle website](https://www.oracle.com/java/technologies/javase-downloads.html).
 
-## Contributing
-
-Contributions are welcome! If you'd like to add new programs, improve existing ones, or fix bugs, please fork the repository and submit a pull request. For major changes, please open an issue first to discuss what you would like to change.
 
 
 ---
