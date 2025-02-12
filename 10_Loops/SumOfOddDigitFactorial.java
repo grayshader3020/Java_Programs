@@ -5,9 +5,9 @@ class SumOfOddDigitFactorial{
 		int sum =0;
 		while(num>0)
 		{
-			int rem = num%10;
+			int rem = num%10;// rem =3
 			int fact = 1;
-			if (!(rem%2==0)){
+			if (!(rem%2==0)){  // if rem is odd then and then only find factors
 					for (int i = rem ;i>=1 ;i-- ) {
 					fact*=i;
 				   }
