@@ -17,43 +17,35 @@ This repository serves as a comprehensive resource for Java enthusiasts. Each di
 
 The repository is organized into the following directories:
 
-- **01_Basics**: Introduction to Java basics.
-- **02_Variables_And_DataTypes**: Programs demonstrating variables and data types.
-- **03_Operators**: Examples of different operators in Java.
-- **04_Conditional_Statements**: Usage of if-else and switch statements.
-- **05_Without_Loops**: Programs implemented without loops.
-- **06_Calculators**: Simple calculator applications.
-- **07_Type_Casting**: Demonstrations of type casting.
-- **08_Conversions**: Programs for various data conversions.
-- **09_Math_Programs**: Mathematical computations and algorithms.
-- **10_Loops**: Examples of different looping constructs.
-- **11_Miscellaneous**: Various other Java programs.
+- **01_Basics**: Introduction to Java basics, including "Hello World" programs and fundamental syntax.
+- **02_Variables_And_DataTypes**: Examples demonstrating variable declarations, data types, and type initialization.
+- **03_Operators**: Programs illustrating the use of arithmetic, relational, logical, and bitwise operators.
+- **04_Conditional_Statements**: Implementations of control flow using if-else, switch-case, and ternary operators.
+- **05_Without_Loops**: Programs solving problems without the use of loops, focusing on recursion and other techniques.
+- **06_Calculators**: Simple calculator applications performing basic arithmetic operations.
+- **07_Type_Casting**: Examples of type conversion and casting between different data types.
+- **08_Conversions**: Programs converting between units, number systems, and data formats.
+- **09_Math_Programs**: Mathematical computations and algorithms, including factorial, Fibonacci series, and prime number checks.
+- **10_Loops**: Demonstrations of for, while, and do-while loops in various scenarios.
+- **11_Miscellaneous**: A collection of diverse programs covering topics not included in the above categories.
+- **Number Series**: Programs generating and analyzing different numerical series and sequences.
+- **Pattern**: Pattern printing programs showcasing various star, number, and character patterns.
 
 ## Getting Started
 
-To get started with this repository:
+To run these programs on your local machine:
 
-1. **Clone the repository**:
+1. **Clone the Repository:**
    ```bash
    git clone https://github.com/grayshader3020/Java_Programs.git
-   cd Java_Programs
-   ```
 
-2. **Navigate to the desired directory**:
+2. **Navigate to the Desired Directory:**
    ```bash
-   cd 01_Basics
-   ```
-
-3. **Compile and run a program**:
+   cd Java_Programs/01_Basics
+3. **Compile the Java Program:**
    ```bash
-   javac ProgramName.java
-   java ProgramName
-   ```
+    javac HelloWorld.java
+4. **Run the Compiled Program:**
+   ```bash
+   java HelloWorld
 
-Ensure you have the Java Development Kit (JDK) installed on your system. You can download it from the [official Oracle website](https://www.oracle.com/java/technologies/javase-downloads.html).
-
-
-
----
-
-Happy coding! 
