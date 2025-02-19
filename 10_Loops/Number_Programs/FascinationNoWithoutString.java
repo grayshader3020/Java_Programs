@@ -6,7 +6,6 @@ class FascinationNoWithoutString{
 		int dup = num;
 		int temp = num;
 		int cnt=0;
-		int count =0;
 		boolean flag = false;
 
 		// to find the length
@@ -21,6 +20,7 @@ class FascinationNoWithoutString{
 
 		// fetching the last digit and comparing
 		for (int i=1;i<=9;i++) {
+			int count =0;
 		    for (int j=num;j>0;j/=10)
 		    {
 			  	int rem =j%10;
@@ -35,7 +35,7 @@ class FascinationNoWithoutString{
 			  break; //terminate the loop
 			}
 		}
-		if (flag)
+		if (!flag)
 		{
 				System.out.println(dup +" is a fascinating number");	
 		}
