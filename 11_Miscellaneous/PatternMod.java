@@ -7,7 +7,7 @@ import javax.imageio.ImageIO;
 
 class PatternMod {
     public static void main(String[] args) {
-        File file = new File("C:" + File.separator + "Users" + File.separator + "DELL" + File.separator + "Desktop" + File.separator + "TomJerry.jpg");
+        File file = new File("C:" + File.separator + "Users" + File.separator + "DELL" + File.separator + "Desktop" + File.separator + "Maharaj.jpg");
         //File file = new File("E:"+ File.separator +"my.jpeg");
         try {
             BufferedImage originalImage = ImageIO.read(file);
