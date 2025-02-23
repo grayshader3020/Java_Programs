@@ -1,44 +1,43 @@
 import java.util.Scanner;
-import java.util.*;
-
 class BouncyNumber{
-	public static void main(String[] args) {
-		System.out.println("Enter a number you want to check");
+	public static void main(String[] args) 
+	{
+		System.out.println("Enter the Number : ");
 		int num = new Scanner(System.in).nextInt();
-		String str = Integer.toString(num);
-		boolean flag = true;
-		// for decreasing
-		boolean isDecreasing=false;
-		for (int i=0;i<str.length()-1;i++){
-			char digit  = str.charAt(i);
-			//System.out.println(digit);
-			if(digit<str.charAt(i+1))
+		int dup = num , a=0,b=0;
+		//bouncy number should be greater than 100 
+		if (num<=100)
+		{
+			System.out.println("Its not a Bouncy Number");
+		}
+		else
+		{
+			int rem1 = dup%10;
+			dup/=10;
+			while(dup>0)
 			{
-				flag = false;
-				isDecreasing=true;
-				break;
+				int rem2 = dup%10;
+				if(rem1>rem2)
+				{
+					a=1;
+				}
+				else if(rem1<rem2)
+				{
+					b=1;
+				}
+				rem1 = rem2;
+				dup /=10;
+			}
+			if (a==1 && b==1) 
+			{
+				System.out.println("Its a bouncy Number ");
+			}
+			else
+			{
+				System.out.println("Its not a bouncy number");
 			}
 		}
-		//for increasing
-        boolean isIncreasing=false;
-		for (int i=0;i<str.length()-1;i++){
-			char digit  = str.charAt(i);
-			//System.out.println(digit);
-			if(digit>str.charAt(i+1))
-			{
-				flag = false;
-				isIncreasing=true;
-				break;
-			}
-		}
-
-		if(flag&&!(isDecreasing)&&!(isDecreasing))
-			{
-				System.out.println(num + " is a bouncy number");
-			}
-		else{
-				System.out.println(num + " is not a bouncy number");
-			}
+		
+		
 	}
-
 }
