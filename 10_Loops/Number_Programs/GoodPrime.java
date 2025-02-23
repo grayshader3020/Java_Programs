@@ -4,11 +4,11 @@ class GoodPrime {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the Num:");
-        int num = sc.nextInt();
+        int num = sc.nextInt();//6
         int cnt = 0;
 
         for (int i = 1; i <= num; i++) {
-            boolean flag = true;
+            boolean flag   = true;
             
             // Check if the number is prime
             if (i <= 1) {
