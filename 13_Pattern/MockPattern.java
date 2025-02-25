@@ -8,7 +8,7 @@
 class MockPattern{
 	public static void main(String[] args) 
 	{
-		int rows = 4;
+		int rows = 5;
 		for (int i=rows;i>=1;i-- ) 
 		{
 			//Ascending numbers
