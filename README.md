@@ -85,7 +85,7 @@ The repository is organized into the following directories:
     ├── 📄 StarPattern.java
     ├── 📄 NumberPattern.java
     └── ...
-
+```
 ## Getting Started
 
 To run these programs on your local machine:
