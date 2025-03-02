@@ -31,6 +31,61 @@ The repository is organized into the following directories:
 - **Number Series**: Programs generating and analyzing different numerical series and sequences.
 - **Pattern**: Pattern printing programs showcasing various star, number, and character patterns.
 
+```
+📦 Java_Programs/
+├── 📜 README.md
+├── 📁 01_Basics/
+│   ├── 📄 HelloWorld.java
+│   ├── 📄 BasicSyntax.java
+│   └── ...
+├── 📁 02_Variables_And_DataTypes/
+│   ├── 📄 VariablesDemo.java
+│   ├── 📄 DataTypesExample.java
+│   └── ...
+├── 📁 03_Operators/
+│   ├── 📄 ArithmeticOperators.java
+│   ├── 📄 LogicalOperators.java
+│   └── ...
+├── 📁 04_Conditional_Statements/
+│   ├── 📄 IfElseExample.java
+│   ├── 📄 SwitchCaseDemo.java
+│   └── ...
+├── 📁 05_Without_Loops/
+│   ├── 📄 RecursionExample.java
+│   └── ...
+├── 📁 06_Calculators/
+│   ├── 📄 SimpleCalculator.java
+│   ├── 📄 ScientificCalculator.java
+│   └── ...
+├── 📁 07_Type_Casting/
+│   ├── 📄 ImplicitCasting.java
+│   ├── 📄 ExplicitCasting.java
+│   └── ...
+├── 📁 08_Conversions/
+│   ├── 📄 StringToInt.java
+│   ├── 📄 IntToString.java
+│   └── ...
+├── 📁 09_Math_Programs/
+│   ├── 📄 FibonacciSeries.java
+│   ├── 📄 PrimeNumberCheck.java
+│   └── ...
+├── 📁 10_Loops/
+│   ├── 📄 ForLoopExamples.java
+│   ├── 📄 WhileLoopExamples.java
+│   └── ...
+├── 📁 11_Miscellaneous/
+│   ├── 📄 PalindromeCheck.java
+│   ├── 📄 ArmstrongNumber.java
+│   └── ...
+├── 📁 Number_Series/
+│   ├── 📄 EvenNumbers.java
+│   ├── 📄 OddNumbers.java
+│   └── ...
+└── 📁 Pattern/
+    ├── 📄 StarPattern.java
+    ├── 📄 NumberPattern.java
+    └── ...
+```
 ## Getting Started
 
 To run these programs on your local machine:
