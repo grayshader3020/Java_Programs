@@ -1,6 +1,16 @@
 import java.util.*;
 class Restaurant
 {
+
+	// ANSI color codes for console output
+    public static final String RESET = "\u001B[0m";
+    public static final String GREEN = "\u001B[32m";
+    public static final String RED = "\u001B[31m";
+    public static final String YELLOW = "\u001B[33m";
+    public static final String BLUE = "\u001B[34m";
+    public static final String CYAN = "\u001B[36m";
+
+
 	static String name; //null
 	static long  contact; //0
 	static String address;//null
@@ -11,12 +21,14 @@ class Restaurant
 		for (; ; )
 		 {
 		 	System.out.println();
-		 	System.out.println("           SILVERLINE PLATTER");
+		 	System.out.println(CYAN+"*".repeat(60)+RESET);
+		 	System.out.println(RED+"                         SILVERLINE PLATTER    "+RESET);
+		 	System.out.println(CYAN+"*".repeat(60)+RESET);
 		 	System.out.println();
-		 	System.out.println("1. Create Account");
-		 	System.out.println("2. Existing User");
+		 	System.out.println(GREEN+"                         1. Create Account     "+RESET);
+		 	System.out.println(GREEN+"                         2. Existing User      "+RESET);
 		 	System.out.println();
-		 	System.out.println("Enter an option : ");
+		 	System.out.println(GREEN+"Enter an option : "+RESET);
 		 	int opt = sc.nextInt();
 		 	System.out.println();
 		 	switch(opt)
@@ -30,17 +42,19 @@ class Restaurant
 	}
 	public static void createAccount(Scanner sc)
 	{
-		System.out.println("     REGISTRATION");
+		System.out.println("*".repeat(60));
+		 	System.out.println(GREEN+"                         Registration   "+RESET);
+		 	System.out.println("*".repeat(60));
 		System.out.println();
-		System.out.println("Name  : ");
+		System.out.println(YELLOW+"Name  : "+RESET);
 		name = sc.next();
-		System.out.println("Phone  :");
+		System.out.println(YELLOW+"Phone  :"+RESET);
 		contact = sc.nextLong();
-		System.out.println("Address  : ");
+		System.out.println(YELLOW+"Address  : "+RESET);
 		sc.nextLine();
 		address = sc.nextLine();
 		System.out.println();
-		System.out.println("ACCOUNT CREATED SUCCESSFULLY");
+		System.out.println(YELLOW+"ACCOUNT CREATED SUCCESSFULLY  "+RESET);
 	}
 	public static void login(Scanner sc)
 	{
@@ -50,14 +64,14 @@ class Restaurant
 			return ;  //calling method(main)
 		}
 
-		System.out.println("        LOGIN");
-		System.out.println();
-
+		System.out.println("#".repeat(60));
+		 	System.out.println(CYAN+"                         LOGIN   "+RESET);
+		 	System.out.println("#".repeat(60));
 		for (int attempt=3;attempt>=1;attempt-- ) 
 		{
-			System.out.println("Username : ");
+			System.out.println(RED+"Username : "+RESET);
 			String username = sc.next();
-			System.out.println("Password : ");
+			System.out.println(RED+"Password : "+RESET);
 			long phone = sc.nextLong();
 			if (name.equals(username) && contact==phone)
 		    { 
@@ -76,14 +90,17 @@ class Restaurant
 	public static void homepage(Scanner sc)
 	{
 		for (; ; ) {
-			System.out.println("     HOME PAGE  ");
 			System.out.println();
-			System.out.println("1. Menu");
-			System.out.println("2. Order");
-			System.out.println("3. Table Booking");
-			System.out.println("4. Logout ");
+			System.out.println("_".repeat(60));
+			System.out.println(YELLOW+"                    HOME PAGE  "+RESET);
+			System.out.println("_".repeat(60));
 			System.out.println();
-			System.out.println("Enter an option : ");
+			System.out.println(GREEN+"1. Menu"+RESET);
+			System.out.println(GREEN+"2. Order"+RESET);
+			System.out.println(GREEN+"3. Table Booking"+RESET);
+			System.out.println(GREEN+"4. Logout "+RESET);
+			System.out.println();
+			System.out.println(GREEN+"Enter an option : "+RESET);
 			int opt1 = sc.nextInt();
 			switch(opt1)
 			{
@@ -101,31 +118,38 @@ class Restaurant
 	public static void menu(Scanner sc)
 	{
 		for (; ; ) {
+			System.out.println(RED+"*".repeat(60)+RESET);
+		 	System.out.println("                         Menu    ");
+		 	System.out.println(RED+"*".repeat(60)+RESET);
 			System.out.println();
-			System.out.println("        MENU        ");
+			System.out.println(BLUE+"@".repeat(60)+RESET);
+			System.out.println("                         VEG        ");
+			System.out.println(BLUE+"@".repeat(60)+RESET);
 			System.out.println();
-			System.out.println("        VEG        ");
+			System.out.println(RED + "101 : Panner_Masala 450/-" + RESET);
+            System.out.println(RED + "102 : Shev_bhaji 80/-" + RESET);
+            System.out.println(RED + "103 : Panner_tikka_Masala 550/-" + RESET);
+            System.out.println(RED + "104 : Kaju_Masala 350/-" + RESET);
+            System.out.println(RED + "105 : Veg_Pullav 450/-" + RESET);
 			System.out.println();
-			System.out.println("101 : Panner_Masala 450/-");
-			System.out.println("102 : Shev_bhaji 80/-");
-			System.out.println("103 : Panner_tikka_Masala 550/-");
-			System.out.println("104 : Kaju_Masala 350/-");
-			System.out.println("105 : Veg_Pullav 450/-");
+			System.out.println(BLUE+"/".repeat(50)+RESET);
+			System.out.println("                        Non-VEG        ");
+			System.out.println(BLUE+"/".repeat(50)+RESET);
 			System.out.println();
-			System.out.println("        Non-VEG        ");
+			System.out.println(RED + "106 : Mutton_Birayani 350/-" + RESET);
+            System.out.println(RED + "107 : Chicken_Birayani 180/-" + RESET);
+            System.out.println(RED + "108 : Chicken_Handi 550/-" + RESET);
+            System.out.println(RED + "109 : Mutton_Handi 750/-" + RESET);
+            System.out.println(RED + "110 : Butter_Chicken 450/-" + RESET);
 			System.out.println();
-			System.out.println("106 : Mutton_Birayani 350/-");
-			System.out.println("107 : Chicken_Birayani 180/-");
-			System.out.println("108 : Chicken_Handi 550/-");
-			System.out.println("109 : Mutton_Handi 750/-");
-			System.out.println("110 : Butter_Chicken 450/-");
+			System.out.println(BLUE+"+".repeat(50)+RESET);
+			System.out.println(BLUE+"                           Roti        "+RESET);
+			System.out.println(BLUE+"+".repeat(50)+RESET);
 			System.out.println();
-			System.out.println("        Roti        ");
-			System.out.println();
-			System.out.println("111 : Roti 15/-");
-			System.out.println("112 : Nan 25/-");
-			System.out.println("113 : Butter_Roti 20/-");
-			System.out.println("114 : Butter_Nan 30/-");
+			System.out.println(RED + "111 : Roti 15/-" + RESET);
+            System.out.println(RED + "112 : Nan 25/-" + RESET);
+            System.out.println(RED + "113 : Butter_Roti 20/-" + RESET);
+            System.out.println(RED + "114 : Butter_Nan 30/-" + RESET);
 			System.out.println();
 			System.out.println("115 :  Exit Menu ");
 			System.out.println();
