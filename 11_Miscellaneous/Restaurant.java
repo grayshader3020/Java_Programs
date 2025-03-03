@@ -243,7 +243,9 @@ class Restaurant
 	public static void order(Scanner sc)
 	{
 		System.out.println();
+		System.out.println(RED+"*".repeat(60)+RESET)
 		System.out.println("        ORDERS          ");
+		System.out.println(RED+"*".repeat(60)+RESET)
 		System.out.println();
 		if (basket.size()==0)
 	    {
